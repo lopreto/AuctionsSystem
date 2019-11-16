@@ -1,0 +1,14 @@
+C:\Users\rodri\OneDrive\Documentos\Proyectos\SistemaSubasta\AuctionsSystemWorker\bin\Release\AuctionsSystemWorker.exe.config
+C:\Users\rodri\OneDrive\Documentos\Proyectos\SistemaSubasta\AuctionsSystemWorker\bin\Release\AuctionsSystemWorker.exe
+C:\Users\rodri\OneDrive\Documentos\Proyectos\SistemaSubasta\AuctionsSystemWorker\bin\Release\AuctionsSystemWorker.pdb
+C:\Users\rodri\OneDrive\Documentos\Proyectos\SistemaSubasta\AuctionsSystemWorker\bin\Release\EntityFramework.dll
+C:\Users\rodri\OneDrive\Documentos\Proyectos\SistemaSubasta\AuctionsSystemWorker\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\rodri\OneDrive\Documentos\Proyectos\SistemaSubasta\AuctionsSystemWorker\bin\Release\Infrastructuree.dll
+C:\Users\rodri\OneDrive\Documentos\Proyectos\SistemaSubasta\AuctionsSystemWorker\bin\Release\Infrastructuree.pdb
+C:\Users\rodri\OneDrive\Documentos\Proyectos\SistemaSubasta\AuctionsSystemWorker\bin\Release\Infrastructuree.dll.config
+C:\Users\rodri\OneDrive\Documentos\Proyectos\SistemaSubasta\AuctionsSystemWorker\bin\Release\EntityFramework.xml
+C:\Users\rodri\OneDrive\Documentos\Proyectos\SistemaSubasta\AuctionsSystemWorker\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\rodri\OneDrive\Documentos\Proyectos\SistemaSubasta\AuctionsSystemWorker\obj\Release\AuctionsSystemWorker.csprojAssemblyReference.cache
+C:\Users\rodri\OneDrive\Documentos\Proyectos\SistemaSubasta\AuctionsSystemWorker\obj\Release\AuctionsSystemWorker.csproj.CopyComplete
+C:\Users\rodri\OneDrive\Documentos\Proyectos\SistemaSubasta\AuctionsSystemWorker\obj\Release\AuctionsSystemWorker.exe
+C:\Users\rodri\OneDrive\Documentos\Proyectos\SistemaSubasta\AuctionsSystemWorker\obj\Release\AuctionsSystemWorker.pdb

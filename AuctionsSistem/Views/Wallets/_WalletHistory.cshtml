@@ -1,0 +1,45 @@
+﻿@model IEnumerable<AuctionsSystem.Models.WalletHistoryModel>
+@using Microsoft.AspNet.Identity
+<hr />
+<h4>Movimentaciones</h4>
+<br />
+<table class="table table-striped">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TransactionValue)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TransactionDate)
+        </th>
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @if (item.WalletIdUserLogged == item.BuyerWalletId)
+                {
+                    <div>- @Html.DisplayFor(modelItem => item.TransactionValue) £</div>
+                }
+                else if (item.WalletIdUserLogged == item.SellerWalletId)
+                {
+                    <div>+ @Html.DisplayFor(modelItem => item.TransactionValue) £</div>
+                }
+                else
+                {
+                    <div>@Html.DisplayFor(modelItem => item.TransactionValue) £</div>
+                }
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TransactionDate)
+            </td>
+        </tr>
+    }
+</table>

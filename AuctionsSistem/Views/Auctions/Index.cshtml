@@ -1,0 +1,62 @@
+﻿@model IEnumerable<AuctionsSystem.Models.AuctionModel>
+@using Microsoft.AspNet.Identity
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Subastas</h2>
+
+<table class="table">
+    <tr>
+        <th>
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Comments)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InitialDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FinalDate)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                <img src="@item.ImagePath" width="100px" />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Comments)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price) £
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InitialDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FinalDate)
+            </td>
+            <td>
+                @if (@User.Identity.GetUserId() != item.UserId)
+                {
+                    @Html.ActionLink("Participar", "AuctionsParticipate", new { id = item.Id })
+                }
+            </td>
+        </tr>
+    }
+
+</table>

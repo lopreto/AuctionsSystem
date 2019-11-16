@@ -1,0 +1,45 @@
+﻿@model AuctionsSystem.Models.WalletModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Operaciones Financieras</h2>
+<hr />
+<div>
+    @using (Html.BeginForm("AddBalance", "Wallets"))
+    {
+        @Html.AntiForgeryToken()
+
+        @Html.HiddenFor(model => model.Id)
+        @Html.HiddenFor(model => model.UserId)
+        @Html.HiddenFor(model => model.Balance)
+        @Html.HiddenFor(model => model.WalletHistory)
+
+    <dl class="dl-horizontal">
+        <dt>
+            <h4>@Html.LabelFor(model => model.Balance)</h4>
+        </dt>
+        <dd>
+            <h4>@Html.DisplayFor(model => model.Balance) £</h4>
+        </dd>
+        <dt>
+            @Html.LabelFor(model => model.HandlingValue)
+        </dt>
+        <dd>
+            <div class="form-group">
+                @Html.EditorFor(model => model.HandlingValue, new { htmlAttributes = new { @class = "form-control", @title="Para hacer una retirada colocar el valor negativo." } })
+            </div>
+        </dd>
+        <dt>
+        </dt>
+        <dd>
+            <input type="submit" value="Salvar" class="btn btn-default" />
+        </dd>
+    </dl>
+    }
+
+    @Html.Partial("_WalletHistory", Model.WalletHistory)
+</div>
+@*<p>
+        @Html.ActionLink("Back to List", "Index")
+    </p>*@

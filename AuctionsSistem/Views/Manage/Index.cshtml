@@ -1,0 +1,39 @@
+﻿@model AuctionsSystem.Models.Identity.IndexViewModel
+@{
+    ViewBag.Title = "Administración";
+}
+
+<h2> @ViewBag.Title.</h2>
+
+<p class="text-success">@ViewBag.StatusMessage</p>
+<div>
+    <h4>Cambiar la configuración de su cuenta</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt><img src="@Model.ImagePath" width="100px" /></dt>
+        <dd>
+            <h2>@Model.Name</h2>
+        </dd>
+        <dt>@Html.ActionLink("Cambiar su fotografia", "ChangeImageUser")</dt>
+        <dd>
+        </dd>
+        <hr />
+        <dt>Correo Electrónico:</dt>
+        <dd>
+            @Model.Email @Html.ActionLink("Cambiar su correo electrónico", "ChangeEmail")
+        </dd>
+        <dt>Contrasenã:</dt>
+        <dd>
+            [
+            @if (Model.HasPassword)
+            {
+                @Html.ActionLink("Cambiar su password", "ChangePassword")
+            }
+            else
+            {
+                @Html.ActionLink("Crear", "SetPassword")
+            }
+            ]
+        </dd>
+    </dl>
+</div>

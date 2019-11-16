@@ -1,0 +1,8 @@
+Cambiar Web.config en la ConnectionString DefaultConnection con sus datos de conexion.
+Cambiar App.config del proyecto "AuctionsSystemWorker" con sus datos de conexion.
+
+Para la base de datos utilizar los scripts de la carpeta "SqlServerScripts".
+Las tablas de Usuarios son creadas automaticamentes por el Identity.
+
+El proyecto "AuctionsSystem" es el lado del cliente.
+El proyecto "AuctionsSystemWorker" es un motor que hace el procesamiento de las subastas y transaciones.

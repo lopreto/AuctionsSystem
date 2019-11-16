@@ -1,0 +1,89 @@
+﻿@model AuctionsSystem.Models.AuctionModel
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Auction</h4>
+    <hr />
+    <img src="@Model.ImagePath" width="100px" />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Comments)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Comments)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.InitialDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.InitialDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FinalDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FinalDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Active)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Active)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.BestBid)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BestBid)
+        </dd>
+        @if (!(Model.AuctionParticipantType == Infrastructure.Enums.AuctionParticipantType.Vendedor))
+        {
+            <dt>
+                @Html.DisplayNameFor(model => model.Bid)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Bid)
+            </dd>
+        }
+        <dt>
+            Participacíon
+        </dt>
+        <dd>
+            @switch (Model.AuctionParticipantType)
+            {
+                case Infrastructure.Enums.AuctionParticipantType.Comprador:
+                    <div>Comprador</div>
+                    break;
+                case Infrastructure.Enums.AuctionParticipantType.Vendedor:
+                    <div>Vendedor</div>
+                    break;
+                case Infrastructure.Enums.AuctionParticipantType.Participante:
+                    <div>Participante</div>
+                    break;
+                default:
+                    break;
+            }
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "MyAuctions")
+</p>

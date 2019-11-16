@@ -1,0 +1,11 @@
+C:\Users\rodri\OneDrive\Documentos\Proyectos\SistemaSubasta\Infrastructuree\bin\Release\Infrastructuree.dll.config
+C:\Users\rodri\OneDrive\Documentos\Proyectos\SistemaSubasta\Infrastructuree\bin\Release\Infrastructuree.dll
+C:\Users\rodri\OneDrive\Documentos\Proyectos\SistemaSubasta\Infrastructuree\bin\Release\Infrastructuree.pdb
+C:\Users\rodri\OneDrive\Documentos\Proyectos\SistemaSubasta\Infrastructuree\bin\Release\EntityFramework.dll
+C:\Users\rodri\OneDrive\Documentos\Proyectos\SistemaSubasta\Infrastructuree\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\rodri\OneDrive\Documentos\Proyectos\SistemaSubasta\Infrastructuree\bin\Release\EntityFramework.xml
+C:\Users\rodri\OneDrive\Documentos\Proyectos\SistemaSubasta\Infrastructuree\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\rodri\OneDrive\Documentos\Proyectos\SistemaSubasta\Infrastructuree\obj\Release\Infrastructure.csproj.CopyComplete
+C:\Users\rodri\OneDrive\Documentos\Proyectos\SistemaSubasta\Infrastructuree\obj\Release\Infrastructuree.dll
+C:\Users\rodri\OneDrive\Documentos\Proyectos\SistemaSubasta\Infrastructuree\obj\Release\Infrastructuree.pdb
+C:\Users\rodri\OneDrive\Documentos\Proyectos\SistemaSubasta\Infrastructuree\obj\Release\Infrastructure.csprojAssemblyReference.cache
