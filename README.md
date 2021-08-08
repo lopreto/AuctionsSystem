@@ -1,3 +1,3 @@
 # Auctions System
 
-Auctions System example, made with .Net Core and Entity Framework Core.
+Auctions System example, made with .Net Framework, Asp .Net Identity and Entity Framework.
